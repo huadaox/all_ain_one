@@ -1,0 +1,119 @@
+[
+  {
+    "id": "chatcmpl-export-001",
+    "conversation_id": "chatcmpl-export-001",
+    "title": "ChatGPT 官方导出样例",
+    "create_time": 1710000000.0,
+    "update_time": 1710000030.0,
+    "current_node": "assistant-final-node",
+    "mapping": {
+      "root-node": {
+        "id": "root-node",
+        "message": null,
+        "parent": null,
+        "children": [
+          "hidden-system-node"
+        ]
+      },
+      "hidden-system-node": {
+        "id": "hidden-system-node",
+        "parent": "root-node",
+        "children": [
+          "user-node"
+        ],
+        "message": {
+          "id": "hidden-system-message",
+          "author": {
+            "role": "system",
+            "name": null
+          },
+          "create_time": 1710000000.0,
+          "update_time": 1710000000.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "hidden"
+            ]
+          },
+          "status": "finished_successfully",
+          "metadata": {
+            "is_visually_hidden_from_conversation": true
+          },
+          "recipient": "all"
+        }
+      },
+      "user-node": {
+        "id": "user-node",
+        "parent": "hidden-system-node",
+        "children": [
+          "assistant-final-node",
+          "assistant-old-node"
+        ],
+        "message": {
+          "id": "user-message",
+          "author": {
+            "role": "user",
+            "name": null
+          },
+          "create_time": 1710000005.0,
+          "update_time": 1710000005.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "你好，简单介绍一下你自己。"
+            ]
+          },
+          "status": "finished_successfully",
+          "metadata": {},
+          "recipient": "all"
+        }
+      },
+      "assistant-old-node": {
+        "id": "assistant-old-node",
+        "parent": "user-node",
+        "children": [],
+        "message": {
+          "id": "assistant-old-message",
+          "author": {
+            "role": "assistant",
+            "name": null
+          },
+          "create_time": 1710000010.0,
+          "update_time": 1710000010.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "这是旧分支，不应该被导入。"
+            ]
+          },
+          "status": "finished_successfully",
+          "metadata": {},
+          "recipient": "all"
+        }
+      },
+      "assistant-final-node": {
+        "id": "assistant-final-node",
+        "parent": "user-node",
+        "children": [],
+        "message": {
+          "id": "assistant-final-message",
+          "author": {
+            "role": "assistant",
+            "name": null
+          },
+          "create_time": 1710000020.0,
+          "update_time": 1710000030.0,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "你好！我是 ChatGPT，可以帮助你整理信息、写作和分析问题。"
+            ]
+          },
+          "status": "finished_successfully",
+          "metadata": {},
+          "recipient": "all"
+        }
+      }
+    }
+  }
+]
