@@ -1,0 +1,4 @@
+# 本地导出/测试输出，不纳入版本库
+/ai-context-output/
+/ai-context-output-since-test/
+/ai-context-output-split-test/
